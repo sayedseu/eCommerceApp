@@ -25,7 +25,7 @@ ThemeData getApplicationTheme() {
         shadowColor: ColorManager.primaryOpacity70,
         titleTextStyle: getSemiBoldStyle(
           color: ColorManager.white,
-          fontSize: FontSize.s20,
+          fontSize: FontSize.s22,
         ),
       ),
       buttonTheme: ButtonThemeData(

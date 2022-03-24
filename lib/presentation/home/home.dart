@@ -1,10 +1,10 @@
+import 'package:ecommerce_app/presentation/profile/profile.dart';
 import 'package:ecommerce_app/resources/colors.dart';
 import 'package:ecommerce_app/resources/strings.dart';
-import 'package:ecommerce_app/view/profile/profile.dart';
 import 'package:flutter/material.dart';
 
-import 'cart/cart.dart';
-import 'category/category.dart';
+import '../cart/cart.dart';
+import '../category/category.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,9 +17,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
+  final List<Widget> _widgetOptions = <Widget>[
     CategoryPage(),
-    CartPage(),
+    const CartPage(),
     ProfilePage(),
   ];
 
